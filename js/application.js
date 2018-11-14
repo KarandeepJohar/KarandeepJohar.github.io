@@ -104,6 +104,8 @@ function playPuppies(puppies) {
     });
 
     $(document).on('click', loadNextPuppy);
+        $(document).on('click touch', loadNextPuppy);
+
 
     var initial_pup = window.location.hash.substring(1);
     if (puppies.indexOf(initial_pup) != -1) {
