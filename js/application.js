@@ -50,7 +50,11 @@ function playPuppies(puppies) {
 
         url = makeURL(newPup, 'mp4');
         $('#puppy > source').attr('src', url);
+                $('#puppy > img').attr('src', makeURL(newPup, 'gif'));
+
         $('#puppy').load();
+
+
         
 
         $('.permalink').attr('href', url);
