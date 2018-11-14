@@ -1,0 +1,104 @@
+@import('normalize.css');
+
+body {
+    background: #000000;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    font-family: 'Noto Sans', Helvetica, sans-serif;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+#puppygif {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+@media all and (orientation:portrait) {
+    #puppygif {
+        width: 100%;
+    }
+}
+@media all and (orientation:landscape) {
+    #puppygif {
+        height: 100%;
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background-color: #000;
+}
+
+.footer a {
+    float: left;
+    padding: 5px 10px;
+    color: #aaa;
+    font-size: 10px;
+    text-decoration: none;
+    background-color: #000;
+    opacity: 0.5;
+    transition: background 200ms;
+}
+
+.footer a.right {
+    float: right;
+}
+
+.footer a:hover {
+    background-color: #fff;
+    opacity: 0.5;
+    color: #444;
+}
+
+#adoptionInfo {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+#adoptionContainer {
+    margin: auto;
+    text-align: center;
+}
+
+.adoptionText {
+    font-family: 'Noto Sans', Helvetica, sans-serif;
+    font-size: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.adoptionButton {
+    color: #fff;
+    background-color: #606060;
+}
+
+.geomicon {
+    fill: #999;
+}
+
+.geomicon:hover {
+    fill: #000;
+}
