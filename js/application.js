@@ -105,6 +105,7 @@ function playPuppies(puppies) {
 
     $(document).on('click', loadNextPuppy);
         $(document).on('click touch', loadNextPuppy);
+        $(document).on("touchstart click", loadNextPuppy);
 
 
     var initial_pup = window.location.hash.substring(1);
